@@ -1,6 +1,6 @@
 ﻿namespace DAGH.Core.Abstractions
 {
-    public interface IEvent
+    public interface IEventHandler
     {
         void Subscribe();
 

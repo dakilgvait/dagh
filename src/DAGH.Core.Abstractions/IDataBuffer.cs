@@ -4,6 +4,6 @@
     {
         byte[] Data { get; }
         int LengthOfEmpty { get; }
-        int Length { get; }
+        int Length { get; set; }
     }
 }
