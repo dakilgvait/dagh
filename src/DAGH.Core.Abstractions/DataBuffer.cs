@@ -1,6 +1,6 @@
-﻿namespace DAGH.Core.Abstractions.Models
+﻿namespace DAGH.Core.Abstractions
 {
-    public class DataBuffer : IDataBuffer
+    public class DataBuffer
     {
         public DataBuffer(byte[] buffer, int length)
         {

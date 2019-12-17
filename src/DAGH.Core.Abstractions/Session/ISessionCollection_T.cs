@@ -1,10 +1,9 @@
-﻿using DAGH.Core.Abstractions.Models;
-using DAGH.Core.Abstractions.Models.Session;
+﻿using DAGH.Core.Abstractions.Models.Session;
 using System;
 
 namespace DAGH.Core.Abstractions.Session
 {
-    public interface ISessionCollection<T> where T : ISession
+    public interface ISessionCollection<T> where T : BaseSession
     {
         T AddSession(T session);
 

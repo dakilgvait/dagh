@@ -2,8 +2,8 @@
 
 namespace DAGH.Core.Abstractions.Models.Session
 {
-    public interface ISession
+    public class BaseSession
     {
-        Guid SessionId { get; }
+        private Guid Id { get; }
     }
 }
