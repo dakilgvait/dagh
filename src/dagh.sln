@@ -7,13 +7,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAGH.Core.Abstractions", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAGH.Core.Adapter.log4net", "DAGH.Core.Adapter.Log4net\DAGH.Core.Adapter.log4net.csproj", "{7A96EB17-BDE5-43BA-80B9-DE94FE4D82E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAGH.ASP.Web.Nuget", "DAGH.ASP.Web.Nuget\DAGH.ASP.Web.Nuget.csproj", "{3A7E51E8-5A71-4018-ABF7-3D8C23E528EA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B6A93DE4-B09C-44E6-9D13-2C68DBF9A427}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAGH.Core.Connection", "DAGH.Core.Connection.Tests\DAGH.Core.Connection.csproj", "{B7E8B2B5-662C-440D-8C72-C0E231F81089}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAGH.Core.Connection.Remote.Mock", "DAGH.Core.Connection.Remote.Mock\DAGH.Core.Connection.Remote.Mock.csproj", "{181185D6-1E1D-4AC0-9F99-9551B3FD5AD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66AEF039-E0E0-47D5-B6DB-AD97A01A158E}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAGH.Core.Adapter.log4net.Tests", "DAGH.Core.Adapter.log4net.Tests\DAGH.Core.Adapter.log4net.Tests.csproj", "{F1532B95-BA4E-4C1E-B6D1-B8C00BF6FC13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAGH.Core.Adapter.Logging.xUnit", "DAGH.Core.Adapter.Logging.xUnit\DAGH.Core.Adapter.Logging.xUnit.csproj", "{7633337D-BF31-4B78-9C64-352495FCEDA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +36,6 @@ Global
 		{7A96EB17-BDE5-43BA-80B9-DE94FE4D82E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A96EB17-BDE5-43BA-80B9-DE94FE4D82E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A96EB17-BDE5-43BA-80B9-DE94FE4D82E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A7E51E8-5A71-4018-ABF7-3D8C23E528EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A7E51E8-5A71-4018-ABF7-3D8C23E528EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A7E51E8-5A71-4018-ABF7-3D8C23E528EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A7E51E8-5A71-4018-ABF7-3D8C23E528EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B7E8B2B5-662C-440D-8C72-C0E231F81089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B7E8B2B5-662C-440D-8C72-C0E231F81089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7E8B2B5-662C-440D-8C72-C0E231F81089}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,12 +44,21 @@ Global
 		{181185D6-1E1D-4AC0-9F99-9551B3FD5AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{181185D6-1E1D-4AC0-9F99-9551B3FD5AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{181185D6-1E1D-4AC0-9F99-9551B3FD5AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1532B95-BA4E-4C1E-B6D1-B8C00BF6FC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1532B95-BA4E-4C1E-B6D1-B8C00BF6FC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1532B95-BA4E-4C1E-B6D1-B8C00BF6FC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1532B95-BA4E-4C1E-B6D1-B8C00BF6FC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7633337D-BF31-4B78-9C64-352495FCEDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7633337D-BF31-4B78-9C64-352495FCEDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7633337D-BF31-4B78-9C64-352495FCEDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7633337D-BF31-4B78-9C64-352495FCEDA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B7E8B2B5-662C-440D-8C72-C0E231F81089} = {B6A93DE4-B09C-44E6-9D13-2C68DBF9A427}
+		{F1532B95-BA4E-4C1E-B6D1-B8C00BF6FC13} = {B6A93DE4-B09C-44E6-9D13-2C68DBF9A427}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {694634F0-4BC2-4C65-8B7E-A4696A8A8EC0}

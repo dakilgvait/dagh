@@ -50,12 +50,21 @@ namespace DAGH.Core.Connection.Factory.Mock
             });
         }
 
-        public async Task<RemoteSession> OnConnected(IRemoteClient<MemoryStream> client)
+        public async Task OnConnected(IRemoteClient<MemoryStream> client)
         {
             if (this.ClientHandler != null)
             {
-                await this.ClientHandler(client);                
+                await this.ClientHandler(client);
             }
+        }
+
+        public RemoteSession CreateSession()
+        {
+            return new RemoteSession();
+        }
+
+        public RemoteSession DisposeSession(Guid id)
+        {
             return new RemoteSession();
         }
     }

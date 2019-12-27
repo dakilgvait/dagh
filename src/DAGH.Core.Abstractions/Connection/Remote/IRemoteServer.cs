@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace DAGH.Core.Abstractions.Connection.Remote
 {
@@ -8,5 +9,9 @@ namespace DAGH.Core.Abstractions.Connection.Remote
         ConnectionOptions Options { get; }
 
         event RemoteActionAsync<S> ClientHandler;
+
+        RemoteSession CreateSession();
+
+        RemoteSession DisposeSession(Guid id);
     }
 }
